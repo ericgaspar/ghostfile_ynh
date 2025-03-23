@@ -8,8 +8,6 @@ User=__APP__
 Group=__APP__
 WorkingDirectory=__INSTALL_DIR__/
 ExecStart=__INSTALL_DIR__/ghostfile --dir __DATA_DIR__ --host 127.0.0.1 --port __PORT__ --gui true
-StandardOutput=append:/var/log/__APP__/__APP__.log
-StandardError=inherit
 
 ### Depending on specificities of your service/app, you may need to tweak these
 ### .. but this should be a good baseline
