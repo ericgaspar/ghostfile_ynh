@@ -1,5 +1,5 @@
 [Unit]
-Description=Ghostfile: 
+Description=GhostFile: Ephemeral File Upload Server
 After=network.target
 
 [Service]

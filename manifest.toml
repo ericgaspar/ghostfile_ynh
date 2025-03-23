@@ -3,21 +3,20 @@
 packaging_format = 2
 
 id = "ghostfile"
-name = "Ghostfile"
-description.en = "Explain in *a few (10~15) words* the purpose of the app or what it actually does (it is meant to give a rough idea to users browsing a catalog of 100+ apps)"
-description.fr = "Expliquez en *quelques* (10~15) mots l'utilité de l'app ou ce qu'elle fait (l'objectif est de donner une idée grossière pour des utilisateurs qui naviguent dans un catalogue de 100+ apps)"
+name = "GhostFile"
+description.en = "Ephemeral File Upload Server"
+description.fr = "GhostFile : Serveur de téléchargement de fichiers éphémères"
 
 version = "2.0.0~ynh1"
 
 maintainers = ["eric_G"]
 
 [upstream]
-license = "free"
+license = "MIT"
 website = "https://example.com"
 demo = "https://demo.example.com"
 admindoc = "https://yunohost.org/packaging_apps"
-userdoc = "https://yunohost.org/apps"
-code = "https://some.forge.com/example/example"
+code = "https://github.com/jon6fingrs/ghostfile"
 
 [integration]
 yunohost = ">= 12.0.9"
@@ -36,37 +35,22 @@ ram.runtime = "50M"
     [install.domain]
     type = "domain"
 
-    [install.path]
-    # this is a generic question - ask strings are automatically handled by YunoHost's core
-    type = "path"
-    default = "/example"
-
     [install.init_main_permission]
     type = "group"
     default = "visitors"
-
-    [install.language]
-    ask.en = "Choose the application language"
-    ask.fr = "Choisissez la langue de l'application"
-    type = "select"
-    choices = ["fr", "en"]
-    default = "fr"
-
-    [install.admin]
-    type = "user"
-
-    [install.password]
-    help.en = "Use the help field to add an information for the admin about this question."
-    help.fr = "Utilisez le champ aide pour ajouter une information à l'intention de l'administrateur à propos de cette question."
-    type = "password"
 
 [resources]
 
     [resources.sources]
 
     [resources.sources.main]
-    url = "https://github.com/jon6fingrs/ghostfile/releases/download/v2.0.0/ghostfile-arm64"
-    sha256 = "0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef"
+    in_subdir = false
+    extract = false
+    rename = "ghostfile"
+    amd64.url = "https://github.com/jon6fingrs/ghostfile/releases/download/v2.0.0/ghostfile"
+    amd64.sha256 = "616f58233af85c75682a814a0d34c35d0ebafeea29677723111f90a8a773d932"
+    arm64.url = "https://github.com/jon6fingrs/ghostfile/releases/download/v2.0.0/ghostfile-arm64"
+    arm64.sha256 = "0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef"
 
     # autoupdate.strategy = "latest_github_tag"
 
