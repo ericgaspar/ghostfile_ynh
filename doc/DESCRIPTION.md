@@ -1,1 +1,1 @@
-This is a dummy description of this app features
+GhostFile is a lightweight, one-time file upload server that automatically shuts down after handling an upload. It’s designed for quick, ephemeral file transfers and is distributed as a single, self-contained binary. GhostFile can run in either command-line (CLI) mode or with a graphical user interface (GUI).
