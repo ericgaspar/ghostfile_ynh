@@ -1,1 +1,1 @@
-Ceci est une fausse description des fonctionalités de l'app
+GhostFile est un serveur de téléchargement de fichiers léger et ponctuel qui s'arrête automatiquement après avoir traité un téléchargement. Il est conçu pour les transferts de fichiers rapides et éphémères et est distribué sous la forme d'un binaire unique et autonome. GhostFile peut fonctionner en mode ligne de commande (CLI) ou avec une interface utilisateur graphique (GUI).
