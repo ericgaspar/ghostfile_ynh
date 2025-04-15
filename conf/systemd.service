@@ -7,7 +7,7 @@ Type=simple
 User=__APP__
 Group=__APP__
 WorkingDirectory=__INSTALL_DIR__/
-ExecStart=__INSTALL_DIR__/ghostfile --dir __DATA_DIR__ --host 127.0.0.1 --port __PORT__ --gui true
+ExecStart=__INSTALL_DIR__/ghostfile --dir __DATA_DIR__ --host 127.0.0.1 --port __PORT__ --gui false
 
 # Sandboxing options to harden security
 # Details for these options: https://www.freedesktop.org/software/systemd/man/systemd.exec.html
